@@ -320,7 +320,7 @@ val clearScreenshotsTask = tasks.register<Exec>("clearScreenshots") {
 }
 
 tasks.whenTaskAdded {
-    if (name == "connectedDebugAndroidTest") {
+    if (name == "connectedGmsDebugAndroidTest") {
         finalizedBy(fetchScreenshotsTask)
     }
 }
